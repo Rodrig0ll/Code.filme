@@ -1,0 +1,183 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+ul {
+
+  list-style: none;
+  
+  }
+
+body {
+
+  background-image: url(./assets/starssss.png);
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+
+
+}
+header {
+
+  text-align: center;
+  padding-top: 35px;
+  height: 120px;
+  
+  }
+
+  header div {
+
+    width: 120px;
+    background-image: linear-gradient(90deg, #C61D47 0%, #9E5B81 50.52%, #5CC2E2 100%);
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    margin: auto;
+    transition: transform .3s;
+}
+
+header div:hover {
+
+  transform: scale(1.1);
+  
+  
+  }
+  
+  
+  header img {
+      width: 100%;
+      border-radius: 50%;
+  }
+  
+  main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+
+    display: grid;
+    gap: 24px;
+
+    margin-top: 32px;
+ }
+
+ body * {
+
+  font-family: 'inter', sans-serif;
+  line-height: 160%;
+
+  }
+
+  section {
+
+    color: white;
+    background-image: linear-gradient(90deg, #C61D47 0%, #9E5B81 50.52%, #5CC2E2 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    }
+
+    section h2 {
+
+      font-weight: 900;
+      font-size: 24px;
+      letter-spacing: -0.47px;
+        }  
+
+        section p {
+          font-weight: 400;
+          font-size: 16px;
+          letter-spacing: -0.18px; 
+          color: #A1A1AA;
+       }      
+
+       section ul {
+
+        display: flex; 
+        gap: 19px;
+        flex-wrap: wrap;
+        margin-top: 24px;
+
+       }
+
+       section ul li {
+
+        transition: transform .3s;
+        }
+        
+        section ul li:hover {
+        
+        transform: scale(1.1);
+        }
+
+       .lista-filmes img {
+        width: 90px;
+        border-radius: 8px;
+        
+        }
+        
+        .lista-serie img {
+          width: 90px;
+          border-radius: 8px;
+          }
+
+       section div {
+        background-color: #2A2634;
+        padding: 32px ;
+        padding-top: 24px;
+        border-radius: 8px;
+        
+        }
+
+
+
+      /*animation*/
+
+
+
+header div {
+
+  animation: fromTop .7s .2s backwards;
+  
+  }
+  
+  @keyframes fromTop 
+  {
+  From 
+  {
+      opacity: 0;
+  transform: translateY(-30px);
+  
+  }
+  
+  To   
+  {
+      opacity: 1;
+  transform: translateY(0);
+  }
+  
+  }
+  
+  main section {
+  
+  animation: fromBottom .7s;
+  
+  }
+  
+  @keyframes fromBottom 
+  {
+      From 
+      {
+          opacity: 0;
+      transform: translateY(0);
+      
+      }
+      
+      To   
+      {
+          opacity: 1;
+      transform: translateY(-30px);
+      }
+      }
